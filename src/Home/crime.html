@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img src="/assets/Logo.png" alt="E-LIBRAZE Logo" class="logo" />
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active">
+                    <img src="/assets/Icon-Home.png" alt="">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-item" onclick="clickFavorites()">
+                    <img src="/assets/Icon-Favorite.png" alt="">
+                    <a href="#">Favorites</a>
+                </div>
+                <div class="nav-item" onclick="clickSettings()">
+                    <img src="/assets/Icon-Setting.png" alt="">
+                    <a href="#">Settings</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Welcome to our website, feel free to read our online book!</h2>
+                <img src="/assets/Icon-Profile.png" alt="User Profile" class="profile" onclick="clickProfile()">
+            </header>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search books..." />
+            </div>
+
+            <div class="categories">
+                <button type="button" onclick="clickScience()">Science</button>
+                <button type="button" onclick="clickRomance()">Romance</button>
+                <button type="button" class="active">Crime</button>
+                <button type="button" onclick="clickComedy()">Comedy</button>
+                <button type="button" onclick="clickPsychology()">Psychology</button>
+            </div>
+
+            <section class="book-grid">
+                <div class="book-card">
+                    <img src="/assets/the-gambler.jpg" alt="book" />
+                    <h4>The Gambler</h4>
+                    <p>Fyodor Dostoevsky</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/murder-on-the-orient-express.jpg" alt="book" />
+                    <h4>Murder on The Orient Express</h4>
+                    <p>Agatha Christie</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/catch-and-kill.jpg" alt="book" />
+                    <h4>Catch and Kill</h4>
+                    <p>Ronan Farrow</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/the-daughter-of-time.jpg" alt="book" />
+                    <h4>The Daughter of Time</h4>
+                    <p>Josephine Tey</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/strange-pictures.jpg" alt="book" />
+                    <h4>Strange Pictures</h4>
+                    <p>Uketsu</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/src/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

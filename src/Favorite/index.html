@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img src="/assets/Logo.png" alt="E-LIBRAZE Logo" class="logo" />
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item" onclick="clickHome()">
+                    <img src="/assets/Icon-Home.png" alt="">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-item active">
+                    <img src="/assets/Icon-Favorite.png" alt="">
+                    <a href="#">Favorites</a>
+                </div>
+                <div class="nav-item" onclick="clickSettings()">
+                    <img src="/assets/Icon-Setting.png" alt="">
+                    <a href="#">Settings</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Favorites List Books</h2>
+                <img src="/assets/Icon-Profile.png" alt="User Profile" class="profile" onclick="clickProfile()">
+            </header>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search books..." />
+            </div>
+
+            <section class="book-list">
+                <div class="book-card" onclick="clickDetailPage()">
+                    <img src="/assets/The-Selfish-Gene.jpg" alt="Book Cover" class="book-image"/>
+                    <div class="book-info">
+                        <h3>The Selfish Gene</h3>
+                        <p class="author">Richard Dawkins</p>
+                        <p class="desc"> <b>Desc: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus debitis laudantium, reiciendis voluptates... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eligendi quo quidem facere, sequi at quam cupiditate accusamus, dignissimos asperiores odit iure dolor! Facilis, blanditiis odio repudiandae est nam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non placeat, rerum iusto quas quia qui. Ducimus exercitationem quos nostrum quas! Aspernatur, alias incidunt. Ad eum doloremque nostrum ratione iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Pulang-Pergi.jpeg" alt="Book Cover" class="book-image"/>
+                    <div class="book-info">
+                        <h3>Pulang-Pergi</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="desc"> <b>Desc: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus debitis laudantium, reiciendis voluptates... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eligendi quo quidem facere, sequi at quam cupiditate accusamus, dignissimos asperiores odit iure dolor! Facilis, blanditiis odio repudiandae est nam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non placeat, rerum iusto quas quia qui. Ducimus exercitationem quos nostrum quas! Aspernatur, alias incidunt. Ad eum doloremque nostrum ratione iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Atomic-Habits.jpg" alt="Book Cover" class="book-image"/>
+                    <div class="book-info">
+                        <h3>Atomic Habits</h3>
+                        <p class="author">James Clear</p>
+                        <p class="desc"> <b>Desc: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus debitis laudantium, reiciendis voluptates... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eligendi quo quidem facere, sequi at quam cupiditate accusamus, dignissimos asperiores odit iure dolor! Facilis, blanditiis odio repudiandae est nam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non placeat, rerum iusto quas quia qui. Ducimus exercitationem quos nostrum quas! Aspernatur, alias incidunt. Ad eum doloremque nostrum ratione iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/the-gambler.jpg" alt="Book Cover" class="book-image"/>
+                    <div class="book-info">
+                        <h3>The Gambler</h3>
+                        <p class="author">Fyodor Dostoevsky</p>
+                        <p class="desc"> <b>Desc: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus debitis laudantium, reiciendis voluptates... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eligendi quo quidem facere, sequi at quam cupiditate accusamus, dignissimos asperiores odit iure dolor! Facilis, blanditiis odio repudiandae est nam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non placeat, rerum iusto quas quia qui. Ducimus exercitationem quos nostrum quas! Aspernatur, alias incidunt. Ad eum doloremque nostrum ratione iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Ubur-ubur-Lembur.jpg" alt="Book Cover" class="book-image"/>
+                    <div class="book-info">
+                        <h3>Ubur Ubur Lembur</h3>
+                        <p class="author">Raditya Dika</p>
+                        <p class="desc"> <b>Desc: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus debitis laudantium, reiciendis voluptates... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eligendi quo quidem facere, sequi at quam cupiditate accusamus, dignissimos asperiores odit iure dolor! Facilis, blanditiis odio repudiandae est nam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non placeat, rerum iusto quas quia qui. Ducimus exercitationem quos nostrum quas! Aspernatur, alias incidunt. Ad eum doloremque nostrum ratione iusto.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/src/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

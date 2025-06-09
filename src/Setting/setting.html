@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="body-container">
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img src="/assets/Logo.png" alt="E-LIBRAZE Logo" class="logo" />
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item" onclick="clickHome()">
+                    <img src="/assets/Icon-Home.png" alt="">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-item" onclick="clickFavorites()">
+                    <img src="/assets/Icon-Favorite.png" alt="">
+                    <a href="#">Favorites</a>
+                </div>
+                <div class="nav-item active">
+                    <img src="/assets/Icon-Setting.png" alt="">
+                    <a href="#">Settings</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Settings</h2>
+                <img src="/assets/Icon-Profile.png" alt="User Profile" class="profile" onclick="clickProfile()" />
+            </header>
+
+            <div class="settings-wrapper">
+                <div class="setting-section">
+                    <h3>Account Settings</h3>
+                    
+                    <label>Email</label>
+                    <input type="email" placeholder="Change your email" />
+                    
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Change your name" />
+                    
+                    <label>Nomor Telphone</label>
+                    <input type="text" placeholder="Change your telephone number" />
+                    
+                    <label>Password</label>
+                    <input type="password" placeholder="Change your password" />
+
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm your new password" />
+
+                    <button class="save-btn">Save Changes</button>
+                </div>
+
+                <div class="setting-section">
+                    <h3>Preferences</h3>
+                    <div class="toggle-option">
+                        <label for="darkMode">Dark Mode</label>
+                        <input type="checkbox" id="darkMode" checked />
+                    </div>
+                    <div class="toggle-option">
+                        <label for="notification">Enable Notifications</label>
+                        <input type="checkbox" id="notification" />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/src/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

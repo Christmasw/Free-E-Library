@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img src="/assets/Logo.png" alt="E-LIBRAZE Logo" class="logo" />
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active">
+                    <img src="/assets/Icon-Home.png" alt="">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-item" onclick="clickFavorites()">
+                    <img src="/assets/Icon-Favorite.png" alt="">
+                    <a href="#">Favorites</a>
+                </div>
+                <div class="nav-item" onclick="clickSettings()">
+                    <img src="/assets/Icon-Setting.png" alt="">
+                    <a href="#">Settings</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Welcome to our website, feel free to read our online book!</h2>
+                <img src="/assets/Icon-Profile.png" alt="User Profile" class="profile" onclick="clickProfile()">
+            </header>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search books..." />
+            </div>
+
+            <div class="categories">
+                <button type="button" onclick="clickScience()">Science</button>
+                <button type="button" onclick="clickRomance()">Romance</button>
+                <button type="button" onclick="clickCrime()">Crime</button>
+                <button type="button" class="active">Comedy</button>
+                <button type="button" onclick="clickPsychology()">Psychology</button>
+            </div>
+
+            <section class="book-grid">
+                <div class="book-card">
+                    <img src="/assets/Ubur-ubur-Lembur.jpg" alt="book" />
+                    <h4>Ubur Ubur Lembur</h4>
+                    <p>Raditya Dika</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Gincu.jpg" alt="book" />
+                    <h4>Gincu.</h4>
+                    <p>LM Cendana</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Setengah-Jalan.jpg" alt="book" />
+                    <h4>Setengah Jalan</h4>
+                    <p>Ernest Prakasa</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Mickey7.jpg" alt="book" />
+                    <h4>Mickey7</h4>
+                    <p>Edward Ashton</p>
+                </div>
+                <div class="book-card">
+                    <img src="/assets/Sakamoto-Days.jpg" alt="book" />
+                    <h4>Sakamoto Days Vol.03</h4>
+                    <p>Yuto Suzuki</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/src/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
