@@ -82,7 +82,7 @@ const validateRegistration = () => {
         return
     }
 
-    window.location.href = "/src/signin/index.html"
+    window.location.href = "/Free-E-Library/src/signin/index.html"
 }
 
 const inputName = document.getElementById('name');
