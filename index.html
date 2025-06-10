@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="src/SignUp/style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <div class="form-section">
+                <h2>Sign Up</h2>
+                <p class="subtitle">Create your free account</p>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" />
+                        <label for="warning" id="validateName">Name must be at least 6 characters</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="telp" placeholder="Nomor Telepon" />
+                        <label for="warning" id="validateTelp">Nomor Telepon can't be empty</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" />
+                        <label for="warning" id="validateEmail">Email is required and must contain @gmail.com.</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" />
+                        <label for="warning" id="validatePassword">Password must be Alphanumeric and more than 4 characters</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+                        <label for="warning" id="validateConfirmPassword">Password must be match with before and not empty</label>
+                    </div>
+
+                    <button type="button" class="submit-btn" onclick="validateRegistration()">Sign Up</button>
+                </form>
+                <p class="login-link">Already have an account?<a href="/src/SignIn/index.html">Sign In</a></p>
+            </div>
+            <div class="side-image">
+                <img src="assets/Study.png" alt="Illustration" />
+                <div class="side-text">
+                    <h3>Read your favourite books</h3>
+                    <p>All your favourite books in one place. Read any book whenever you have free time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
