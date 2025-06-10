@@ -1,3 +1,3 @@
 const clickLogin = () => {
-    window.location.href = "/src/Home/Science.html"
+    window.location.href = "/Free-E-Library/src/Home/science.html"
 }
