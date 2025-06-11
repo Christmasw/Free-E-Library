@@ -13,17 +13,17 @@ function measureHeightWindow() {
 }
 
 const clickHome = () => {
-    window.location.href = "/src/Home/science.html"
+    window.location.href = "/Free-E-Library/src/Home/science.html"
 }
 
 const clickSettings = () => {
-    window.location.href = "/src/Setting/setting.html"
+    window.location.href = "/Free-E-Library/src/Setting/setting.html"
 }
 
 const clickProfile = () => {
-    window.location.href = "/src/Profile/profile.html"
+    window.location.href = "/Free-E-Library/src/Profile/profile.html"
 }
 
 const clickDetailPage = () => {
-    window.location.href = "/src/DetailPage/index.html"
+    window.location.href = "/Free-E-Library/src/DetailPage/detailpage.html"
 }
