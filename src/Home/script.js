@@ -13,7 +13,7 @@ function measureHeightWindow() {
 }
 
 const clickFavorites = () => {
-    window.location.href = "/Free-E-Library/src/Favorite/index.html"
+    window.location.href = "/Free-E-Library/src/Favorite/favorite.html"
 }
 
 const clickSettings = () => {
@@ -25,7 +25,7 @@ const clickProfile = () => {
 }
 
 const clickDetailPage = () => {
-    window.location.href = "/Free-E-Library/src/DetailPage/index.html"
+    window.location.href = "/Free-E-Library/src/DetailPage/detailpage.html"
 }
 
 const clickScience = () => {
