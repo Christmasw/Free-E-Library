@@ -13,19 +13,19 @@ function measureHeightWindow() {
 }
 
 const clickFavorites = () => {
-    window.location.href = "/src/Favorite/index.html"
+    window.location.href = "/Free-E-Library/src/Favorite/index.html"
 }
 
 const clickSettings = () => {
-    window.location.href = "/src/Setting/setting.html"
+    window.location.href = "/Free-E-Library/src/Setting/setting.html"
 }
 
 const clickProfile = () => {
-    window.location.href = "/src/Profile/profile.html"
+    window.location.href = "/Free-E-Library/src/Profile/profile.html"
 }
 
 const clickDetailPage = () => {
-    window.location.href = "/src/DetailPage/index.html"
+    window.location.href = "/Free-E-Library/src/DetailPage/index.html"
 }
 
 const clickScience = () => {
