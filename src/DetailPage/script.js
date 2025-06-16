@@ -1,8 +1,26 @@
 $(document).ready(function() {
     measureHeightWindow()
+
+    if(localStorage.length > 0) {
+        let accountActive = "";
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const value = localStorage.getItem(key);
+            
+            if(JSON.parse(value).status == "active") {
+                accountActive = "active"
+            }
+        }
+
+        if(accountActive == "") {
+            window.location.href = "/Free-E-Library/src/SignIn/login.html"
+        }
+    }
+    else {
+        window.location.href = "/Free-E-Library/src/SignIn/login.html"
+    }
 });
 
-// Check if body height is higher than window height
 function measureHeightWindow() {
     if ($("body").height() > $(window).height()) {
         $(".body-container").css("height", "100%");
