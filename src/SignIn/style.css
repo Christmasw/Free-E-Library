@@ -59,17 +59,61 @@ body {
     max-width: 90%;
 }
 
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#active-warning {
+    display: none;
     width: 100%;
 }
 
+.warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255 232 229);
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 2px rgb(200, 200, 200);
+}
+
+.display-warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.warning span, .display-warning span {
+    color: rgb(204 54 41);
+}
+
+.warning .icon-warning {
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.warning .icon-close {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group label {
-    margin-bottom: 5px;
-    display: block;
     font-size: 18px;
+    margin-bottom: 6px;
 }
 
 .form-group input {
@@ -119,9 +163,9 @@ body {
 
 .register-prompt a {
     color: blue;
+    font-weight: 500;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
