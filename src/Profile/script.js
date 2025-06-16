@@ -32,9 +32,6 @@ $(document).ready(function() {
         if(accountActive == "") {
             window.location.href = "/Free-E-Library/src/SignIn/login.html"
         }
-        else {
-
-        }
     }
     else {
         window.location.href = "/Free-E-Library/src/SignIn/login.html"
