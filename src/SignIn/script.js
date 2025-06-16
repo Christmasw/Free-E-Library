@@ -5,7 +5,7 @@ $(document).ready(function() {
             const value = localStorage.getItem(key);
             
             if(JSON.parse(value).status == "active") {
-                window.location.href = "/Free-E-Library/src/Home/Science.html"
+                window.location.href = "/Free-E-Library/src/Home/science.html"
             }
         }
     }
@@ -45,7 +45,7 @@ const clickLogin = () => {
             };
             localStorage.setItem(id, JSON.stringify(userData));
 
-            window.location.href = "/Free-E-Library/src/Home/Science.html"
+            window.location.href = "/Free-E-Library/src/Home/science.html"
         }
         else {
             const validateAccount = document.getElementById('active-warning');
