@@ -30,14 +30,14 @@ $(document).ready(function() {
         }
 
         if(accountActive == "") {
-            window.location.href = "/src/SignIn/login.html"
+            window.location.href = "/Free-E-Library/src/SignIn/login.html"
         }
         else {
 
         }
     }
     else {
-        window.location.href = "/src/SignIn/login.html"
+        window.location.href = "/Free-E-Library/src/SignIn/login.html"
     }
 });
 
