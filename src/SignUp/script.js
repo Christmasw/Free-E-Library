@@ -1,3 +1,16 @@
+$(document).ready(function() {
+    if(localStorage.length > 0) {
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const value = localStorage.getItem(key);
+            
+            if(JSON.parse(value).status == "active") {
+                window.location.href = "/Free-E-Library/src/Home/Science.html"
+            }
+        }
+    }
+});
+
 const isAlphanumeric = (password) => {
   let hasLetter = false;
   let hasDigit = false;
@@ -81,6 +94,16 @@ const validateRegistration = () => {
     if (nameIsValid == false || telpIsValid == false || emailIsValid == false || passwordIsValid == false || confirmPasswordIsValid == false) {
         return
     }
+
+    const userData = {
+        name: name,
+        telp: telp,
+        email: email,
+        password: password,
+        status: "inactive",
+    };
+
+    localStorage.setItem("user" + (localStorage.length + 1), JSON.stringify(userData));
 
     window.location.href = "/Free-E-Library/src/SignIn/login.html"
 }
