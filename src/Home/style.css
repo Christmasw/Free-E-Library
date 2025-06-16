@@ -177,7 +177,6 @@ img {
     color: #aaa;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .sidebar {
         min-width: 60px;
