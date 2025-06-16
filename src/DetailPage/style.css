@@ -156,7 +156,6 @@ img {
     word-spacing: 1px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
         min-width: 60px;
