@@ -29,7 +29,11 @@
             </nav>
         </aside>
 
-        <main class="main-content">
+       <main class="main-content">
+            <div class="pop-up">
+                <span class="popuptext" id="myPopup">Perubahan data akun Anda telah disimpan!</span>
+            </div>
+
             <header class="topbar">
                 <h2>Settings</h2>
                 <img src="/Free-E-Library/assets/Icon-Profile.png" alt="User Profile" class="profile" onclick="clickProfile()" />
@@ -40,21 +44,26 @@
                     <h3>Account Settings</h3>
                     
                     <label>Email</label>
-                    <input type="email" placeholder="Change your email" />
+                    <input type="email" id="email" placeholder="Change your email" />
+                    <label for="warning" id="validateEmail">Email is required and must contain @gmail.com</label>
                     
                     <label>Nama Lengkap</label>
-                    <input type="text" placeholder="Change your name" />
+                    <input type="text" id="name" placeholder="Change your name" />
+                    <label for="warning" id="validateName">Name must be at least 6 characters</label>
                     
                     <label>Nomor Telphone</label>
-                    <input type="text" placeholder="Change your telephone number" />
+                    <input type="text" id="telp" placeholder="Change your telephone number" />
+                    <label for="warning" id="validateTelp">Nomor Telepon can't be empty</label>
                     
                     <label>Password</label>
-                    <input type="password" placeholder="Change your password" />
+                    <input type="password" id="password" placeholder="Change your password" />
+                    <label for="warning" id="validatePassword">Password must be Alphanumeric and more than 4 characters</label>
 
                     <label>Confirm Password</label>
-                    <input type="password" placeholder="Confirm your new password" />
+                    <input type="password" id="confirmPassword" placeholder="Confirm your new password" />
+                    <label for="warning" id="validateConfirmPassword">Password must be match with before and not empty</label>
 
-                    <button class="save-btn">Save Changes</button>
+                    <button type="button" class="save-btn" onclick="saveChangeData()">Save Changes</button>
                 </div>
 
                 <div class="setting-section">
