@@ -5,7 +5,7 @@ $(document).ready(function() {
             const value = localStorage.getItem(key);
             
             if(JSON.parse(value).status == "active") {
-                window.location.href = "/Free-E-Library/src/Home/Science.html"
+                window.location.href = "/Free-E-Library/src/Home/science.html"
             }
         }
     }
