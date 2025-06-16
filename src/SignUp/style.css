@@ -11,12 +11,12 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .signup-container {
     max-width: 1000px;
-    width: 100%;
+    width: 95%;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
