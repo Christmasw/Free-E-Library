@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=warning" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
 </head>
 <body>
     <main class="container">
@@ -15,6 +17,15 @@
         <section class="right-panel">
             <h1>Read your favourite books</h1>
             <p class="desc">All your favourite books in one place. Read any book whenever you have free time.</p>
+            <div id="active-warning">
+                <div class="warning">
+                    <div class="display-warning">
+                        <span class="material-symbols-outlined icon-warning">warning</span>
+                        <span>Invalid email and password combination</span>
+                    </div>
+                    <span class="material-symbols-outlined icon-close" onclick="closeWarning()">close</span>
+                </div>
+            </div>
             <form action="" method="GET" class="login-form">
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -25,7 +36,7 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Input your password" />
                 </div>
-
+                
                 <div class="buttons">
                     <button type="button" class="btn signin" onclick="clickLogin()">Sign In</button>
                     <div class="register-prompt">
